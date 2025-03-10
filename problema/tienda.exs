@@ -19,7 +19,7 @@ defmodule Tienda do
     end
   end
 
-  
+   
 
   defp ingresar_num_valido(mensaje) do
     entrada = mensaje |> EntradaDatos.ingresar(:entero)
