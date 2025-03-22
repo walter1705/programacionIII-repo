@@ -14,9 +14,7 @@ defmodule Animal do
     [struct | lista]
   end
 
-  def get_mayores_que(lista, peso) do
-    lista |> Enum.filter(& &1.peso > peso)
-  end
+  def get_mayores_que(lista, peso), do: lista |> Enum.filter(& &1.peso > peso)
 end
 
 
