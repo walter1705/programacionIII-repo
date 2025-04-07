@@ -3,9 +3,6 @@ defmodule Greater_DandC do
     greater(list) |> IO.puts()
   end
 
-  def greater([]),
-    do: :negative_infinity
-
   def greater([x]),
     do: x
 
