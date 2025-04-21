@@ -1,3 +1,0 @@
-defmodule Estructura do
-
-end
