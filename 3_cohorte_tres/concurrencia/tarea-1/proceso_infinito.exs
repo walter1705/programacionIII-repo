@@ -2,8 +2,9 @@
 
 defmodule ProcesoInfinito do
   def procesoInfinito(mensaje, segundos) do
-    IO.puts(mensaje)
+
     Process.sleep(segundos*1000)
+    spawn(fn  -> IO.puts(mensaje)  end)
     procesoInfinito(mensaje, segundos)
   end
 end
