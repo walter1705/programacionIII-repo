@@ -1,5 +1,4 @@
 defmodule EntradaDatos do
-
     defp ingresar(mensaje, parser, tipo_dato) do
         try do
           mensaje
@@ -9,7 +8,7 @@ defmodule EntradaDatos do
         rescue
         ArgumentError ->
           "Error, se espera que ingrese un número #{tipo_dato}\n"
-          |> mostrar_error()
+          |> mostrar_mensaje()
           mensaje
           |> ingresar(parser, tipo_dato)
         end
